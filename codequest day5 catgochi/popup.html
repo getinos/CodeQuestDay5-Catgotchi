@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catgotchi AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Hello, Sujay!</h1>
+      <span class="cat-emoji">🐱</span>
+    </div>
+
+    <div class="input-section">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Ask your cat something..."
+      />
+      <button id="send-btn">Send</button>
+    </div>
+
+    <div class="advice-container">
+      <p class="advice" id="advice-text">
+        Loading cat wisdom...
+      </p>
+      <span class="cat-paw">🐾</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+  <script>
+    // Connect to the background script when popup opens
+    const port = chrome.runtime.connect({name: "popup"});
+  </script>
+</body>
+</html>

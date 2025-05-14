@@ -1,0 +1,134 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffeef8;
+    margin: 0;
+    padding: 12px;
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #6a5a7d;
+}
+
+.container {
+    background-color: #fff9fc;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(211, 162, 225, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+    color: #9b6dbb;
+}
+
+.cat-emoji {
+    font-size: 20px;
+    margin-left: 6px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.input-section {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 2px solid #e2c6ff;
+    background-color: #fcf5ff;
+    color: #6a5a7d;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #c39fe0;
+    box-shadow: 0 0 5px rgba(195, 159, 224, 0.5);
+}
+
+select {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 2px solid #e2c6ff;
+    background-color: #fcf5ff;
+    color: #6a5a7d;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+select:focus {
+    border-color: #c39fe0;
+}
+
+button {
+    background-color: #ffb6e1;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 14px;
+    color: #6a5a7d;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #ff9ed6;
+    transform: scale(1.05);
+}
+
+.advice-container {
+    background-color: #f0e5ff;
+    border-radius: 16px;
+    padding: 12px;
+    margin-top: 4px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    max-height: 90px;
+    word-wrap: break-word;
+}
+
+.advice {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #6a5a7d;
+    margin: 0;
+    width: 100%;
+}
+
+.cat-paw {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    font-size: 24px;
+    opacity: 0.3;
+    transform: rotate(-30deg);
+}
